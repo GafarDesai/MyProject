@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wonders Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: burlywood;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover{
+            border: 1px solid red;
+            
+        }
+
+        
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            margin: 10px;
+            overflow: hidden;
+            width: calc(33.33% - 20px);
+            /* 33.33% width for each item with 20px margin */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            transition: transform 0.2s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Wonders of the World</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Founder.html">Founder</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+    
+        <h2 style="text-align: center;">World Wonders Gallery</h2>
+    
+
+    <section>
+        <div class="gallery-item">
+            <img src="img/Chichen Itza - Mexico..jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="img/Christ the Redeemer - Brazil..jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="img/Colosseum - Italy..jpg" alt="">
+        </div>
+        <!-- Repeat the above three items to create the first row -->
+
+        <div class="gallery-item">
+            <img src="img/Machu Picchu - Peru..jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="img/Petra - Jordan..jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="img/Taj Mahal - India.jpg" alt="">
+        </div>
+        <!-- Repeat the above three items to create the second row -->
+
+        <div class="gallery-item">
+            <img src="img/The Great Pyramid of Giza - Egypt (Given honorary status).jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="img/The Great Wall of China - China..jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="img/Chichen Itza - Mexico..jpg" alt="">
+        </div>
+        <!-- Repeat the above three items to create the third row -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gafar Desai. All rights reserved.</p>
+    </footer>
+</body>
+</html>

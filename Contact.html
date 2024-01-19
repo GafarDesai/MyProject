@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: burlywood;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    border: 1px solid red;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the last value for transparency */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the last value for transparency */
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body style="background-image: url(img/Machu\ Picchu\ -\ Peru..jpg);">
+    <header>
+        <h1>Explore the Wonders of the World</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Founder.html">Founder</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        
+    </nav>
+    <br><br><br><br><br><br>
+        <h2 style="text-align: center;">Contact Us</h2>
+    
+    
+    <section>
+        <form action="#" method="post" onsubmit="showAlert()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function showAlert() {
+            alert("Your response is submitted");
+        }
+    </script>
+     <footer>
+        <p>&copy; 2024 Gafar Desai. All rights reserved.</p>
+    </footer>
+</body>
+</html>
